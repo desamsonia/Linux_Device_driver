@@ -1,4 +1,6 @@
-//write a module that can take an integer parameter when it is loaded with insmod . it should have default value when none is specified. load it and unload it. while the module is loaded look at its directory in /sys/module/ and see if you can change the value of parameter you established. use c code
+//write a module that can take an integer parameter when it is loaded with insmod . 
+//it should have default value when none is specified. load it and unload it. 
+//while the module is loaded look at its directory in /sys/module/ and see if you can change the value of parameter you established. use c code
 
 #include <linux/module.h>
 #include <linux/kernel.h>
@@ -24,5 +26,5 @@ module_init(my_module_init);
 module_exit(my_module_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Your Name");
+MODULE_AUTHOR("SONIA");
 MODULE_DESCRIPTION("A simple module with a parameter");
